@@ -20,8 +20,8 @@ class UserController {
     /**
      * 获取单个
      */
-    @GetMapping("getById")
-    fun getById(userId:Long): User {
+    @GetMapping("get")
+    fun get(userId:Long): User {
         return userService.get(userId)
     }
 
